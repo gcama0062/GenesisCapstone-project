@@ -25,17 +25,24 @@ This project simulates a simple hospital database system that allows hospital em
 
 
 # Key Features/ Components
-<br>-User Input: First name, last name, and date of birth.
-<br>-Patient Lookup: Matches input to randomly generated patients.
-<br>-Information Display: Shows gender, email, country, and nationality.
-<br>-Fallback Display: Generates random details if no exact match is found.
-<br>-API Integration: Uses the Random User API for data.
+<br>-User Input Handling: Uses Python’s input() function and .strip() method to clean and collect data for first name, last name, and date of birth.
+
+<br>-JSON Parsing: Extracts nested values like user['name']['first'] and user['dob']['date'] from the API's JSON response.
+
+<br>-Conditional Matching: Compares lowercase versions of name strings and exact date strings using if and .lower statements for precise matches.
+
+<br>-Display Logic: Uses Python’s random.choice() to select and display a random user if no match is found. (Adds gender, email, country, and nationality)
+
+<br>-Formatted Output: Displays patient data using Python’s .format() method and string concatenation to create clean, readable print statements.
+
+<br>-API Integration: Connects to the Random User API to pull simulated patient data.
+
 
 
 # Technical Challenges + Future Plans
 -Challenges
 <br>Matching user input to randomly generated data (rare chance of finding a match).
-<br>Couldn't storing the info in a CSV file
+<br>Saving the patient information into a CSV file. In a previous project, I successfully stored user inputs in a file, but I couldn’t implement that functionality in this version of the program.
 
 -Future Plans
 <br>Add search filters like gender, age range, or country.
@@ -51,9 +58,9 @@ This project simulates a simple hospital database system that allows hospital em
 -Day three
 <br>Started writing the code (how would they search the patient and what would come up)<br>
 -Day four
-<br>Finalizing last minunet changes and errors<br>
+<br>Finalizing last minute changes and errors<br>
 -Day five
-<br> Writeing the README and prepare for subission<br>
+<br> Writing the README and prepare for submission<br>
 
 
 # Tools and Resources Used
@@ -66,6 +73,10 @@ This project simulates a simple hospital database system that allows hospital em
 <br>ChatGPT
 <br>-Used to look up info on how to add and format some info in the program.
 <br>-How to add points and organize the README.
+
+<br>Techsmart
+<br>Originally created using the TechSmart coding platform.
+
 
 
 
